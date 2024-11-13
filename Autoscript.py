@@ -12,5 +12,3 @@ print(d)
 for i in d:
     pyautogui.write(i, interval=0)
     pyautogui.press("return")
-
-

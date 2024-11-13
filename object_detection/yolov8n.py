@@ -32,10 +32,7 @@ while True:
     if not ret:
         print("Frame not captured")
         exit()
-    
-    # cv2.imwrite("object_detection/images/frame.png",frame)
 
-    # predict
     detect_params = model.predict(source=frame , conf = 0.45 , save = False)
 
     boxes = []

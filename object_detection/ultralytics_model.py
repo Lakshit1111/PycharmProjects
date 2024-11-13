@@ -4,7 +4,7 @@ import numpy
 
 model = YOLO("object_detection/model/yolov8n.pt" , "v8")
 
-detect_params = model.predict("object_detection/bus.jpg" , conf = 0.25 , save_dir = True)
+detect_params = model.predict(0, conf = 0.25 , save_dir = True)
 
 # print(detect_params)
 
